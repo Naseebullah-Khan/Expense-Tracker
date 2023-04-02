@@ -8,9 +8,7 @@ export default function App() {
       id: "e" + (expenses.length + 1),
       ...newExpenseData,
     };
-    // console.log(data);
-    expenses.push(data);
-    console.log(expenses);
+    console.log(data);
   };
 
   return (
