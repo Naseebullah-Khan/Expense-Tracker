@@ -1,6 +1,6 @@
 import "./ChartBar.css";
 
-export default function ChartBar(props) {
+const ChartBar = (props) => {
   let barFillHeight = "0%";
 
   if (props.maxValue > 0) {
@@ -18,4 +18,6 @@ export default function ChartBar(props) {
       <div className="chart-bar__label">{props.label}</div>
     </div>
   );
-}
+};
+
+export default ChartBar;

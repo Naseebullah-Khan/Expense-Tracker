@@ -4,7 +4,7 @@ import NewExpense from "./components/NewExpense/NewExpense";
 import Expenses from "./components/Expenses/Expenses";
 import { EXPENSES } from "./resources/resources";
 
-export default function App() {
+const App = () => {
   const [expenses, setExpenses] = useState(EXPENSES);
 
   const onNewExpenseDataHandler = (newExpenseData) => {
@@ -19,4 +19,6 @@ export default function App() {
       <Expenses items={expenses} />
     </div>
   );
-}
+};
+
+export default App;
